@@ -1,0 +1,54 @@
+
+
+
+/* alarmın amacı */
+#txt{
+    position: absolute;
+    right: 600px;
+    top: 120px;
+    height: 300px;
+    width: 300px;
+    resize: none;
+ }
+ /* alarm oluşturma buttonu */
+ #bb{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    height: 50px;
+    width: 1230px;
+}
+/* saat seçimi */
+#ii{
+    top: 10px;
+    left: 10px;
+
+}
+
+/* kayıtedilen alalarmlarımm */
+#ppp{
+    position: absolute;
+    left: 10px;
+    top: 60px;
+}
+
+/* boşluk */
+#bll{
+    position: absolute;
+    left: 10px;
+    top: 60px;
+
+}
+
+/* kurulu alarmları görme yeri
+#almrgör{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    height: 550px;
+    width: 450px;
+
+    border: solid 1px red;
+}
+
+ */
