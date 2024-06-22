@@ -1,6 +1,9 @@
 
 
 
+
+
+
 /* yazıyı kaydertmek */
 
 document.addEventListener("DOMContentLoaded",function(){
@@ -12,26 +15,33 @@ document.addEventListener("DOMContentLoaded",function(){
 } )
 const yy=document.getElementById("bll");
 function  kyd(){
+
+    /* kullanıcının saatini almak  */
+var ksaat=new Date().getHours();
+var kdk=new Date().getMinutes();
+var kulanıcıdanalınan= ksaat+":"+kdk
     
+ var  yer=document.getElementById("almrgor");
 
 var üü=document.getElementById("txt").value;
 localStorage.setItem("ss",üü)
 
 
 /*  kayıtedilen alalarmlar */
-var saatt=document.getElementById("saatim").value;
-var kayıtlıalarm=document.createElement("li");
+var saatt=document.getElementById("saatim").value
+const kayıtlıalarm=document.createElement("p")
 kayıtlıalarm.id="ppp";
-document.body.appendChild(kayıtlıalarm);
-/* boşluk bırakma */
-var boşluk=document.createElement("br")
-boşluk.id="bll"
-
-document.body.appendChild(boşluk);
-
-document.getElementById("ppp").innerHTML +=saatt+":"+" "+üü+" "+yy
+yer.appendChild(kayıtlıalarm);
+document.getElementById("ppp").innerHTML +=saatt+":"+" "+üü+'<br>'
 
 
 
+if(kulanıcıdanalınan=saatt){
 
+    alert(saatt+" "+"alarm vakdi geldi")
+}else{
+
+    console.log("sa")
+
+}
 }

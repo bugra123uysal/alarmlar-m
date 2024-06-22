@@ -28,22 +28,12 @@
 /* kayıtedilen alalarmlarımm */
 #ppp{
     position: absolute;
-    left: 10px;
-    top: 60px;
+   
 }
 
-/* boşluk */
-#bll{
+#almrgır{
     position: absolute;
-    left: 10px;
-    top: 60px;
-
-}
-
-/* kurulu alarmları görme yeri
-#almrgör{
-    position: absolute;
-    top: 50px;
+    
     left: 10px;
     height: 550px;
     width: 450px;
@@ -51,4 +41,4 @@
     border: solid 1px red;
 }
 
- */
+ 
