@@ -14,13 +14,28 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 } )
 const yy=document.getElementById("bll");
+const daı=document.getElementById("iün");
+const saatt=document.getElementById("saatim");
+ /* kullanıcının saatini almak  */
+
+
+     
 function  kyd(){
 
-    /* kullanıcının saatini almak  */
-var ksaat=new Date().getHours();
-var kdk=new Date().getMinutes();
-var kulanıcıdanalınan= ksaat+":"+kdk
-    
+
+  
+    saatt.addEventListener('input',function(){
+        
+        
+        
+            const a=saatt.value;
+        
+            const [hour, minute] =a.split(':');
+           
+           daı.textContent=`Saat: ${hour}, Dakika: ${minute}`;
+        });
+
+   
  var  yer=document.getElementById("almrgor");
 
 var üü=document.getElementById("txt").value;
@@ -28,20 +43,12 @@ localStorage.setItem("ss",üü)
 
 
 /*  kayıtedilen alalarmlar */
-var saatt=document.getElementById("saatim").value
 const kayıtlıalarm=document.createElement("p")
 kayıtlıalarm.id="ppp";
 yer.appendChild(kayıtlıalarm);
-document.getElementById("ppp").innerHTML +=saatt+":"+" "+üü+'<br>'
+document.getElementById("ppp").innerHTML +=daı+":"+" "+üü+'<br>'
 
 
 
-if(kulanıcıdanalınan=saatt){
 
-    alert(saatt+" "+"alarm vakdi geldi")
-}else{
-
-    console.log("sa")
-
-}
 }
